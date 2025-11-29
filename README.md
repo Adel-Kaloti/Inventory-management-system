@@ -31,6 +31,9 @@ These predictions replace the traditional static inputs used in classical invent
 - **total_stockout_cost** – Cost caused by stockouts and lost sales.
 -----
 
+<img width="955" height="423" alt="image" src="https://github.com/user-attachments/assets/48dee0f7-cdcb-43fb-826a-ed5cd1c6a5e3" />
+
+
 # 📦 Inventory Management ML Model – Pilot Phase  
 ### Hybrid Model (Random Forest + EOQ + Continuous Review)
 
@@ -86,23 +89,73 @@ The comparison shows a clear improvement after adding the Random Forest model.
 
 Overall, Version 2 demonstrates the advantage of machine learning in capturing complex demand patterns and improving prediction accuracy.
 
+---
 
 
+## 📌 Model Behavior – 3 Key Phases
 
-
-
-
-
-
-
+### **1) Classical EOQ + Continuous Review (Baseline)**
+The model reacted late to sudden demand spikes or drops because it relied on fixed averages.  
+This caused temporary shortages and unstable inventory levels.
 
 <img width="791" height="383" alt="image" src="https://github.com/user-attachments/assets/550500e5-64a4-44c3-9c58-dd319f224e11" />
 
+---
+
+### **2) ML Integration (Random Forest – Version 1)**
+Machine learning improved reaction speed and prediction accuracy.  
+The model learned daily demand patterns and adapted to changes in real time.
+
 <img width="827" height="396" alt="image" src="https://github.com/user-attachments/assets/c9439eba-d886-408f-bf5d-5f7fdf9a7bce" />
 
+---
 
-<img width="921" height=396" alt="image" src="https://github.com/user-attachments/assets/1bf497b7-f0c7-43d2-8709-52f7b3dca11d" />
+### **3) ML Integration (Random Forest – Version 2)**
+The ML-based model detected abnormal trends earlier, reduced stockouts, and kept inventory levels more consistent compared to the classical method.
 
+<img width="921" height="573" alt="image" src="https://github.com/user-attachments/assets/a41bc463-b99a-45d0-afca-b1fb507b8c29" />
+
+---
+
+
+## 📊 Key Success Results (Summary)
+
+<img width="970" height="496" alt="image" src="https://github.com/user-attachments/assets/c23c2838-7a42-4890-a3e7-9cae4d90f47f" />
+
+1. **zero_inv_days (Days with Zero Inventory)**  
+   The new model reduced days with zero stock by ~75%, meaning better product availability and fewer lost sales.
+
+2. **num_orders (Number of Orders)**  
+   The new model created fewer but more efficient orders, cutting total orders by ~33% and improving operational stability.
+
+3. **Holding Cost**  
+   Inventory holding cost decreased by ~21%, thanks to maintaining optimal stock levels and reducing excess inventory.
+
+4. **Stockout Cost**  
+   Stockout cost dropped by ~75%, showing major improvement in meeting customer demand and preventing lost sales.
+
+5. **R² Accuracy**  
+   Prediction accuracy increased from **0.79 → 0.92**, proving the new model explains demand behavior much more effectively.
+
+
+<p align="center">
+<img width="274" height="231" alt="image" src="https://github.com/user-attachments/assets/61f4337c-31c8-4bc5-bf81-f4b928be07c2" />
+</p>
+
+
+   ## ✅ What We Improved in This Project
+
+- **Better demand forecasting:** The model predicts demand more accurately than traditional methods.  
+- **Weekend effect captured:** Adding weekend logic improved demand stability.  
+- **Simple but powerful system:** Excel-based, easy to operate, and highly reliable.  
+- **Major upgrade from Version 1:** Significant improvement in KPIs and overall performance.  
+- **Scalable to other departments:** The model can be expanded to any product category in the future.
+
+### 🧰 Tools Kit
+
+<p align="center">
+  <img width="1051" height="202" alt="image" src="https://github.com/user-attachments/assets/4af1169a-17d8-4508-828e-818e47f9b56d" />
+</p>
 
 
 
